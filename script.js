@@ -12,8 +12,7 @@ for (let i = 0; i < hearts.length; i++) {
 
 // Get all buttons with class "callsCount"
 const calls = document.getElementsByClassName("callsCount");
-
-
+document.getElementById("netionalEmer_history").style.display="none";
 
 // Loop through all of them
 for (let i = 0; i < calls.length; i++) {
@@ -31,7 +30,7 @@ for (let i = 0; i < calls.length; i++) {
     //update the coin
     let Fcoint=parseInt(coins.innerText);
     Fcoint=Fcoint-20;
-    if(Fcoint>0){
+    if(Fcoint>=0){
     coins.innerText=Fcoint;
     }else{
        alert("No coin left");
@@ -40,19 +39,35 @@ for (let i = 0; i < calls.length; i++) {
 
     // Show them in an alert
     alert(title + " \n " + number);
-  });
-}
-// document.getElementById("history_parent").style.display = "none";
-document.getElementById("netionalEmer_history").style.display = "none";
-document.getElementById("police_history").style.display = "none";
-document.getElementById("fireServ_history").style.display = "none";
-document.getElementById("ambulance_history").style.display = "none";
-document.getElementById("women_history").style.display = "none";
-document.getElementById("anti_corruption_history").style.display = "none";
-document.getElementById("electricity_history").style.display = "none";
-document.getElementById("brac_history").style.display = "none";
-document.getElementById("railway_history").style.display = "none";
-document.getElementById("railway_history").style.display = "flex";
-// Hide all history sections
+  
+  
+  //history section update
+  const historyParent = document.getElementById("history_parent");
 
+  // Create a new div for this call history
+    const newHistory = document.createElement("div");
+    newHistory.className = "bg-[#FAFAFA] w-full rounded-lg h-[83px] p-4 mb-4 flex justify-between items-center";
+
+    // Add title + number
+    const leftDiv = document.createElement("div");
+    leftDiv.innerHTML = `<h1>${title} <br> <span>${number}</span></h1>`;
+
+     // Add time
+    const rightDiv = document.createElement("div");
+    const now = new Date();
+    rightDiv.innerHTML = `<p class="text-[18px] font-bold">${now.toLocaleString()}</p>`;
+
+    newHistory.appendChild(leftDiv);
+    newHistory.appendChild(rightDiv);
+
+    // Append new history to the parent
+    historyParent.prepend(newHistory); // shows latest on top
+
+
+});
+}
+
+document.getElementById("clear-btn").addEventListener('click',function(){
+   const historyP=document.getElementById("history_parent").innerHTML=" ";
+})
 
