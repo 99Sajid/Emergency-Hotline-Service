@@ -10,10 +10,10 @@
 </head>
 <body>
     <nav>
-        <!-- upper head started here -->
+        <!-- Navbar started here -->
     <section class=" w-full h-[100px] flex items-center bg-[#FFFFFF]">
         <!-- upper left section -->
-        <div class="w-[50%] h-full flex   items-center ml-10 py-[20px] gap-[10px] ">
+        <div class="w-full md:w-1/2 h-full flex   items-center ml-10 py-[20px] gap-[10px] ">
             <div>
              <img src="./assets/logo.png" class=" inset-0 w-[50px] h-[50px] object-cover" alt="">
         </div>
@@ -33,13 +33,13 @@
                 <div><img src="./assets/coin.png" class="h-[24px] w-[24px]" alt=""></div>
            </div>          
            <div class=" h-[52px] w-[123px] bg-[#00A63E] rounded-full flex justify-center items-center gap-[10px]">
-                <div class="font-bold">0</div>
+                <div id="Countcopy"  class="font-bold">0</div>
                 <div class="text-[16px] font-bold">Copy</div>
            </div>       
          </div>
     </section>
     </nav>
-    <!-- lower head -->
+    <!-- Hero Section -->
     <section class="bg-[#006747]">
   <div class=" w-full h-[239px] px-[60px] py-[21px] flex flex-col justify-center items-center">
 
@@ -63,10 +63,11 @@
   </div>
 </section>
 
-<!--  body start from  here -->
+<!--  Main Section start from  here -->
  <section class=" bg-[#F2F2F2] w-full min-h-screen   ">
-  <div class="mainDiv pt-[30px] flex flex-row gap-[15px]">
-<div class="leftBody  w-3/4 ml-[50px] mb-[50px]  grid grid-cols-3 gap-6">
+  <div class="mainDiv pt-[30px] flex flex-col lg:flex-row gap-[15px]">
+<div class="leftBody  w-full lg:w-3/4 mx-4 sm:mx-6 md:mx-10 mb-[50px]  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+ 
   <div class="firstCard ">
     <!-- card div bg-[#FFE3E2] -->    
       <div class="  p-[32px] bg-[#ffffff] w-full rounded-lg " >
@@ -85,7 +86,7 @@
              <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">All</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-            <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+            <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -110,7 +111,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Police</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -127,14 +128,14 @@
       </div>
       <div class=" pt-4">
         <h5 class="NE_title text-[24px] font-bold ">Fire service Number</h5>
-        <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Fire Service</p>
+        <p >Fire Service</p>
       </div>
       <div class=" pt-4">
            <h2 class="NE_number text-[32px] font-bold">999</h2>
-           <p>Fire</p>
+           <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Fire</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -159,7 +160,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Health</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -183,7 +184,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Help</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -208,7 +209,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Govt.</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
      </div>
      </div>
@@ -233,7 +234,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Electricity</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -259,7 +260,7 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">NGO</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-             <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+             <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
@@ -284,14 +285,14 @@
            <p class="inline-block bg-[#FFE3E2] rounded-2xl px-2 py-1">Travel</p>
       </div>
       <div class=" flex w-full pt-4 gap-1">
-            <button class="btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
+            <button class="copyCount btn w-1/2 rounded-lg"><span><img src="assets/copy.png" class="h-[16px] w-[16px]" alt=""></span>Copy</button>
             <button class="callsCount btn w-1/2 rounded-lg bg-[#00A63E] text-white"><span><img src="assets/telephone.png" class="invert brightness-200 h-[16px] w-[16px]" alt=""></span>Call</button>
       </div>
      </div>
 
   </div>
   </div>
-  <div class=" bg-[#ffffff] rightBody  w-1/4 mb-[50px] rounded-lg">
+  <div class=" bg-[#ffffff] rightBody  w-full lg:w-1/4 mb-[50px] rounded-lg">
   <div class="  flex justify-between items-center p-4">
     
     <!-- Left: Icon + Text -->
@@ -301,8 +302,8 @@
     </div>
 
     <!-- Right: Button -->
-    <button id="clear-btn" class="h-[52px] w-[123px] bg-[#00A63E] rounded-full flex justify-center items-center text-[16px] font-bold text-white">Clear</button>
-
+    
+    <button id="clear-btn" class="h-[52px] w-full sm:w-[123px] bg-[#00A63E] rounded-full  items-center text-[16px] font-bold text-white">Clear</button>
   </div>
 
 
@@ -313,26 +314,12 @@
     </div>
     <div>
       <p id="historyTime" class="text-[18px] font-bold ">11:36:58 AM</p>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
- 
-  
-  
-  
-  </div>
-
-
-</div>
-
-
-  </div>
-
-    </section>
-    
-
-     
-
+</section>
 <script src="script.js"></script>
 
 </body>

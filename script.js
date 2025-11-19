@@ -10,6 +10,23 @@ for (let i = 0; i < hearts.length; i++) {
   });
 }
 
+const copys = document.getElementsByClassName("copyCount");
+
+for (let i = 0; i < copys.length; i++) {
+  copys[i].addEventListener("click", function () {
+    
+    let countElement = document.getElementById("Countcopy");
+    let count = parseInt(countElement.innerText);
+    count++;   
+    countElement.innerText = count;
+    const parentCard = this.parentNode.parentNode.parentNode;
+    const num = parentCard.getElementsByClassName("NE_number")[0].innerText;
+    alert("Copied: " + num);
+    navigator.clipboard.writeText(num); 
+     
+  });
+}
+
 // Get all buttons with class "callsCount"
 const calls = document.getElementsByClassName("callsCount");
 document.getElementById("netionalEmer_history").style.display="none";
@@ -38,7 +55,7 @@ for (let i = 0; i < calls.length; i++) {
     }
 
     // Show them in an alert
-    alert(title + " \n " + number);
+    alert(title + "  " + number);
   
   
   //history section update
@@ -55,7 +72,13 @@ for (let i = 0; i < calls.length; i++) {
      // Add time
     const rightDiv = document.createElement("div");
     const now = new Date();
-    rightDiv.innerHTML = `<p class="text-[18px] font-bold">${now.toLocaleString()}</p>`;
+    const timeOnly = now.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false  
+});
+    rightDiv.innerHTML = `<p class="text-[18px] font-bold">${timeOnly}</p>`;
 
     newHistory.appendChild(leftDiv);
     newHistory.appendChild(rightDiv);
